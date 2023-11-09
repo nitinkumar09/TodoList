@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 145px;
+    background: #fff;
+    margin: 30px auto;
+    padding: 12px 10px 12px;
+    border-radius: 5px;
+}
+
+.todo-app h2 img {
+    width: 20px;
+    height: 9px;
+    margin-left: 5px;
+}
+
+.todo-app h2 {
+    font-size: 4px;
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-top: -10px;
+}
+
+.row input {
+    flex: 1;
+    width: 49px;
+    height: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+    padding: 5px;
+}
+
+#input-box {
+    font-size: 4px;
+}
+
+.row button {
+    width: 21px;
+    height: 9.5px;
+    text-align: center;
+    font-size: 4px;
+    background: #ff4945;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 4px;
+    padding: 3px 6px;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+}
+
+ul {
+margin-top:7px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height:8px;
+    width:8px;
+    border-radius:50%;
+    background-image:url(images/unchecked.png);
+    background-size:cover;
+    background-position:center;
+    top:1.2px;
+    left:-3px;
+}
+ul li.checked{
+color:#555;
+text-decoration:line-through;
+}
+ul li.checked::before{
+    background-image:url(images/checked.jpg);
+}
+ul li span{
+    position:absolute;
+    right:0;
+    top:-22px;
+    width:3px;
+    height:20px;
+    font-size:7px;
+    color:#555;
+    line-height:55px;
+    align-items:center;
+    border-radius:50px;
+}
+
+ul li span:hover{
+  color:black;
+}
